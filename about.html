@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DYNAMIC AND STATIC
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="banner">
+            <div class="navbar">
+                <img src="lg (2).jpg" class="logo">
+        
+        
+        <ul>
+            <li><a href="edu.html">EDUCATIONAL</a></li>
+            <li><a class="active" href="#about">ABOUT</a></li>
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </div>
+    <div class="intro">
+    <h1>You can call Me JD</h1>
+    <h1>I am 3rd year College Student at Quezon City University with the course of BSIT.</h1>
+    <h1>My birthday is January 23, 2001 and I'm 22 years old.</h1><br><br><br><br>
+
+
+    <div class="con">
+        <h1>ARTIST AND BAND I LIKE </h1>
+
+        <a href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A"><img src="bp.jpg" alt="blackpink" height="300px"; width="500px";>&nbsp;&nbsp;&nbsp;
+            
+        <a href="https://www.youtube.com/channel/UCBoANX4oFfAyGPjMSUFYrfQ"><img src="lany.jpg" alt="LANY" height="300px"; width="500px";>&nbsp;&nbsp;&nbsp;
+
+        <a href="https://www.youtube.com/channel/UCVwNmpVppVl_VZu0IR5WXIQ"><img src="mrld.jpg" alt="MRLD" height="300px"; width="500px";>&nbsp;&nbsp;&nbsp;
+        
+        <a href="https://www.youtube.com/channel/UCqg1RYTb0THbOGtbuCjkRVA"><img src="nolore.jpg" alt="NOLORE" height="300px"; width="500px";></a>
+    </div>
+
+    <div class="container2">
+        <h1>PAINTING I LIKE</h1>
+
+    <body>
+
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="SP.JPG" style="width:100%" height="300">
+          <div class="text">Spolarium</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="bl.png" style="width:100%" height="300">
+          <div class="text">Starry Night Over the Rhône</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="yb.jpg" style="width:100%" height="300">
+          <div class="text">DIRECTION-3</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+    </div>
+</div>   
+
+
+    
+
+  
+
+    </body>
+</html>
